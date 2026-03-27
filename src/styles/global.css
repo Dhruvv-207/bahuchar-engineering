@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Industrial Palette */
+  --pearl-grey: #F2F2F2;
+  --industrial-ochre: #D4AF37;
+  --burnt-sienna: #A0522D;
+  --slate-text: #1C1C1C;
+  --iron-grey: #4A4A4A;
+  --steel-border: #E0DED7;
+  --ivory-white: #FDFBF7;
+  
+  --transition-mechanical: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-industrial: 0 10px 40px rgba(0,0,0,0.06);
+  
+  /* Fluid Spacing */
+  --section-pad: clamp(4rem, 10vw, 8rem);
+  --h1-size: clamp(2.5rem, 8vw, 6rem);
+  --h2-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 380px) {
+  html { font-size: 14px; } /* Scaling down for small mobiles like 320px */
+}
+
+body {
+  background-color: var(--ivory-white);
+  color: var(--slate-text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+
+.mono {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--industrial-ochre);
+}
+
+.section-padding {
+  padding: var(--section-pad) 5%;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: clamp(3rem, 8vw, 5rem) 20px;
+  }
+}
+
+.btn-industrial {
+  background: var(--slate-text);
+  color: white;
+  padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem);
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-mechanical);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Glassmorphism: Frosted Steel */
+.frosted-steel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(163, 126, 44, 0.2);
+}
+
+/* Skeleton Shimmer */
+.shimmer {
+  background: linear-gradient(90deg, #F2F2F2 25%, #E5E5E5 50%, #F2F2F2 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
