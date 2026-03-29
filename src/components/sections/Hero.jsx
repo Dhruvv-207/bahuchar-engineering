@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.h1 style={{ marginBottom: '0.4em', fontSize: 'clamp(2.0rem, 5vw, 4.0  rem)' }}>
+        <motion.h1 style={{ marginBottom: '0.4em', fontSize: 'clamp(1.8rem, 4.5vw, 3.2rem)' }}>
           STABILITY FOR <br />
           <span style={{ color: 'var(--industrial-ochre)' }}>INDUSTRY.</span>
         </motion.h1>
