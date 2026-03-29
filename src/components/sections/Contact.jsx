@@ -49,7 +49,7 @@ const Contact = () => {
               <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'var(--pearl-grey)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <MapPin size={20} color="var(--industrial-ochre)" />
               </div>
-              <span className="mono" style={{ fontSize: '1rem', color: 'var(--slate-text)' }}>Gujarat, India</span>
+              <span className="mono" style={{ fontSize: '1rem', color: 'var(--slate-text)' }}>Ahmedabad, Gujarat, India</span>
             </div>
           </div>
         </motion.div>

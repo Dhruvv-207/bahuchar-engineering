@@ -24,7 +24,7 @@ const Card = ({ icon: Icon, title, desc, img }) => {
       <div style={{ position: 'relative', zIndex: 1, transform: 'translateY(-10px)' }}>
         <Icon size={40} color="var(--industrial-ochre)" style={{ marginBottom: '24px' }} />
         <h3 style={{ fontSize: '1.75rem', marginBottom: '16px' }}>{title}</h3>
-        <p style={{ color: 'var(--iron-grey)', fontSize: '1rem', lineHeight: '1.6' }}>{desc}</p>
+        <p style={{ color: 'var(--iron-grey)', fontSize: '1rem', lineHeight: '1.6', whiteSpace: 'pre-line' }}>{desc}</p>
         
         <div style={{ 
           marginTop: '32px', 
@@ -63,22 +63,22 @@ const Card = ({ icon: Icon, title, desc, img }) => {
 const Services = () => {
   const cards = [
     { 
-      icon: Target, 
-      title: "Laser Machine Bases", 
-      desc: "Stress-relieved, high-rigidity steel structures designed to eliminate harmonic vibrations in high-speed optical systems.",
-      img: "/assets/images/laser_base_positioning.png"
+      icon: Layers, 
+      title: "Fabrication Work", 
+      desc: "We undertake all types of structural and industrial fabrication work as per client requirements, ensuring high structural integrity and durability.",
+      img: "/assets/images/indian_workshop_interior.png"
     },
     { 
-      icon: Layers, 
-      title: "Molding Machine Frames", 
-      desc: "Heavy-duty structural frames engineered to withstand massive clamping forces in injection and blow molding processes.",
+      icon: Target, 
+      title: "Base Frame Manufacturing", 
+      desc: "Specialized in high-precision base frame fabrication for: \n• Laser Machine Foundations \n• Moulding Machine Bases \nBuilt with maximum rigidity for zero-vibration stability.",
       img: "/assets/images/molding_machine_base_cast.png"
     },
     { 
       icon: Settings, 
-      title: "Custom Heavy Fabrication", 
-      desc: "Turnkey fabrication for multi-axis machinery foundations, robotic cells, and specialized automated cell bases.",
-      img: "/assets/images/heavy_hydraulic_press.png"
+      title: "Machining (Plano Miller)", 
+      desc: "High-precision machining for large-scale industrial components ensures proper alignment, perfect flatness, and a professional surface finish.",
+      img: "/assets/images/machined_steel_closeup.png"
     }
   ];
 
@@ -93,7 +93,7 @@ const Services = () => {
           style={{ marginBottom: '60px' }}
         >
           <span className="mono">Our Capability</span>
-          <h2 style={{ fontSize: '3rem', marginTop: '16px' }}>ENGINEERED TO <br /><span style={{ color: 'var(--industrial-ochre)' }}>SUPPORT SCALE.</span></h2>
+          <h2 style={{ fontSize: '3rem', marginTop: '16px' }}>SERVICES</h2>
         </motion.div>
         
         <div style={{ 

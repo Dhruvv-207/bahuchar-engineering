@@ -18,35 +18,46 @@ const VideoStage = () => {
   };
 
   return (
-    <section className="section-padding" style={{ backgroundColor: 'var(--slate-text)' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
-        
-        <div style={{ marginBottom: '40px', color: 'white' }}>
-          <span className="mono" style={{ opacity: 0.6 }}>Behind the Scenes</span>
-          <h2 style={{ fontSize: '3rem', marginTop: '16px' }}>THE ART OF <br /><span style={{ color: 'var(--industrial-ochre)' }}>HEAVY FABRICATION.</span></h2>
+    <section className="section-padding" style={{ backgroundColor: 'var(--slate-text)', color: 'white' }}>
+      <div style={{ maxWidth: '1400px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ marginBottom: '60px' }}>
+          <span className="mono" style={{ color: 'var(--industrial-ochre)' }}>Cinematic Showcase</span>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'white', marginTop: '16px' }}>THE ART OF <br />HEAVY FABRICATION.</h2>
         </div>
 
-        {/* Industrial Frame */}
+        {/* Video Container - Optimized for Portrait 9:16 */}
         <div style={{ 
           position: 'relative', 
-          border: '10px solid #2A2A2A', 
-          background: '#000',
-          boxShadow: '0 40px 100px rgba(0,0,0,0.5)'
+          maxWidth: '500px', // Portrait constraint on desktop
+          margin: '0 auto',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          border: '1px solid rgba(212, 175, 55, 0.3)',
+          boxShadow: '0 30px 60px rgba(0,0,0,0.5)',
+          background: '#000'
         }}>
-          {/* Decorative Bolts */}
-          <div style={{ position: 'absolute', top: '-20px', left: '-20px', width: '40px', height: '40px', background: '#333', borderRadius: '50%', border: '4px solid #1A1A1A' }} />
-          <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '40px', height: '40px', background: '#333', borderRadius: '50%', border: '4px solid #1A1A1A' }} />
-          <div style={{ position: 'absolute', bottom: '-20px', left: '-20px', width: '40px', height: '40px', background: '#333', borderRadius: '50%', border: '4px solid #1A1A1A' }} />
-          <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', width: '40px', height: '40px', background: '#333', borderRadius: '50%', border: '4px solid #1A1A1A' }} />
-          
+          {/* Decorative Industrial Bolts */}
+          <div style={{ position: 'absolute', top: '10px', left: '10px', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--industrial-ochre)', opacity: 0.5 }} />
+          <div style={{ position: 'absolute', top: '10px', right: '10px', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--industrial-ochre)', opacity: 0.5 }} />
+          <div style={{ position: 'absolute', bottom: '10px', left: '10px', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--industrial-ochre)', opacity: 0.5 }} />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--industrial-ochre)', opacity: 0.5 }} />
+
           <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
             ref={videoRef}
-            src="/assets/videos/company_profile.mp4" 
-            style={{ width: '100%', height: 'auto', opacity: 0.8 }}
-            loop
-            muted
-            onClick={togglePlay}
-          />
+            style={{ 
+              width: '100%', 
+              height: '100%', 
+              objectFit: 'cover',
+              display: 'block',
+              aspectRatio: '9/16'
+            }}
+          >
+            <source src="/assets/videos/company_profile.mp4" type="video/mp4" />
+          </video>
 
           <motion.button 
             whileHover={{ scale: 1.1 }}

@@ -20,7 +20,7 @@ const Hero = () => {
         width: 'clamp(30%, 50%, 60%)', 
         height: '100%', 
         background: 'url(/assets/images/indian_workshop_interior.png) center/cover no-repeat',
-        opacity: 0.15 
+        opacity: 0.4 
       }} />
 
       <div className="hero-content" style={{ position: 'relative', zIndex: 1, maxWidth: '1000px', width: '100%' }}>
@@ -28,16 +28,16 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: 'clamp(20px, 4vw, 40px)' }}
+          style={{ display: 'flex', alignItems: 'center', gap: 'clamp(20px, 4vw, 40px)', marginBottom: 'clamp(30px, 6vw, 60px)' }}
         >
-          <img src="/assets/images/logo.png" alt="Bahuchar Logo" style={{ height: 'clamp(40px, 6vw, 80px)', width: 'auto' }} />
-          <div>
-            <span className="mono" style={{ fontSize: 'clamp(0.6rem, 1vw, 0.8rem)' }}>ESTABLISHED PRECISION</span>
-            <div style={{ width: 'clamp(40px, 8vw, 100px)', height: '1px', background: 'var(--industrial-ochre)', marginTop: '4px' }} />
+          <img src="/assets/images/logo.png" alt="Bahuchar Logo" style={{ height: 'clamp(80px, 12vw, 140px)', width: 'auto' }} />
+          <div style={{ borderLeft: '3px solid var(--industrial-ochre)', paddingLeft: '30px' }}>
+             <h3 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2.8rem)', margin: 0, color: 'var(--slate-text)', lineHeight: 0.95, fontWeight: 900 }}>BAHUCHAR<br /><span style={{ color: 'var(--industrial-ochre)', fontSize: '0.8em' }}>ENGINEERING</span></h3>
+             <span className="mono" style={{ fontSize: '0.9rem', marginTop: '12px', display: 'block', fontWeight: 700 }}>ESTABLISHED PRECISION</span>
           </div>
         </motion.div>
 
-        <motion.h1 style={{ marginBottom: '0.5em' }}>
+        <motion.h1 style={{ marginBottom: '0.4em', fontSize: 'clamp(2.0rem, 5vw, 4.0  rem)' }}>
           STABILITY FOR <br />
           <span style={{ color: 'var(--industrial-ochre)' }}>INDUSTRY.</span>
         </motion.h1>
@@ -46,11 +46,13 @@ const Hero = () => {
           style={{ 
             fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', 
             color: 'var(--iron-grey)', 
-            maxWidth: '550px', 
-            marginTop: '20px' 
+            maxWidth: '650px', 
+            marginTop: '20px',
+            lineHeight: 1.6
           }}
         >
-          Heavy-duty fabrication of high-precision machine bases. Zero-vibration engineering for industrial lasers and molding systems.
+          We provide reliable and high-quality fabrication and machining solutions for industrial applications. With a well-equipped workshop and experienced manpower, we deliver precision and durability in every project.<br /><br />
+          <span style={{ color: 'var(--industrial-ochre)', fontWeight: 600 }}>👉 Your Trusted Partner in Fabrication & Machining</span>
         </motion.p>
 
         <motion.div 
@@ -63,7 +65,7 @@ const Hero = () => {
             Request Quote <ChevronRight size={20} />
           </a>
           
-          <div className="frosted-steel" style={{ 
+          {/* <div className="frosted-steel" style={{ 
             padding: '12px 24px', 
             display: 'flex', 
             alignItems: 'center', 
@@ -73,7 +75,7 @@ const Hero = () => {
           }}>
             <ShieldCheck size={20} color="var(--industrial-ochre)" />
             ISO 9001:2015 CERTIFIED
-          </div>
+          </div> */}
         </motion.div>
       </div>
 

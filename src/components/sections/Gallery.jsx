@@ -9,13 +9,9 @@ const images = [
   { id: 5, src: '/assets/images/molding_machine_base_cast.png', size: 'small' },
   { id: 6, src: '/assets/images/finished_bases_ready_shipping.png', size: 'medium' },
   { id: 7, src: '/assets/images/machined_steel_closeup.png', size: 'small' },
-  { id: 8, src: '/assets/images/steel_plate_inventory.png', size: 'large' },
-  { id: 9, src: '/assets/images/factory_night_shift_soft.png', size: 'medium' },
   { id: 10, src: '/assets/images/cnc_frame_machining.png', size: 'large' },
   { id: 11, src: '/assets/images/oxy_fuel_cutting_sparks.png', size: 'small' },
   { id: 12, src: '/assets/images/loading_delivery_truck.png', size: 'medium' },
-  { id: 13, src: '/assets/images/heavy_hydraulic_press.png', size: 'large' },
-  { id: 14, src: '/assets/images/indian_technicians_plan.png', size: 'small' },
   { id: 15, src: '/assets/images/quality_check_sticker.png', size: 'medium' }
 ];
 

@@ -3,7 +3,6 @@ import './styles/global.css';
 import Hero from './components/sections/Hero';
 import Services from './components/sections/Services';
 import Capacity from './components/sections/Capacity';
-import Process from './components/sections/Process';
 import Gallery from './components/sections/Gallery';
 import VideoStage from './components/sections/VideoStage';
 import Contact from './components/sections/Contact';
@@ -41,7 +40,6 @@ function App() {
         <Hero />
         <Services />
         <Capacity />
-        <Process />
         <Gallery />
         <VideoStage />
         <Contact />
