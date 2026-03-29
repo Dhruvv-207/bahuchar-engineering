@@ -28,7 +28,7 @@ function App() {
           <img src="/assets/images/logo.png" alt="Bahuchar Logo" style={{ height: 'clamp(30px, 4vw, 40px)', width: 'auto' }} />
           <div style={{ fontWeight: 900, lineHeight: 1.1 }}>
             <span style={{ fontSize: 'clamp(0.9rem, 2vw, 1.1rem)', color: 'var(--slate-text)', display: 'block' }}>BAHUCHAR</span>
-            <span style={{ fontSize: 'clamp(0.5rem, 1vw, 0.6rem)', color: 'var(--industrial-ochre)', display: 'block' }}>ENGINEERING</span>
+            <span className="hide-on-small" style={{ fontSize: '0.6rem', color: 'var(--industrial-ochre)', display: 'block' }}>ENGINEERING</span>
           </div>
         </div>
         <div>
@@ -66,12 +66,12 @@ function App() {
               </ul>
             </div>
             <div>
-              <h4 className="mono" style={{ marginBottom: '20px', color: 'var(--industrial-ochre)' }}>Legal</h4>
+              {/* <h4 className="mono" style={{ marginBottom: '20px', color: 'var(--industrial-ochre)' }}>Legal</h4>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', opacity: 0.8 }}>
                 <li>Privacy Policy</li>
                 <li>Terms of Service</li>
                 <li>Certification ISO</li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

@@ -13,27 +13,68 @@ const Hero = () => {
       overflow: 'hidden',
       backgroundColor: 'var(--ivory-white)'
     }}>
-      <div style={{ 
-        position: 'absolute', 
-        right: 0, 
-        top: 0, 
-        width: 'clamp(30%, 50%, 60%)', 
-        height: '100%', 
-        background: 'url(/assets/images/indian_workshop_interior.png) center/cover no-repeat',
-        opacity: 0.4 
-      }} />
+      <div 
+        className="hero-bg"
+        style={{ 
+          position: 'absolute', 
+          right: 0, 
+          top: 0, 
+          width: 'clamp(30%, 50%, 60%)', 
+          height: '100%', 
+          background: 'url(/assets/images/indian_workshop_interior.png) center/cover no-repeat',
+          opacity: 0.25,
+          zIndex: 0
+        }} 
+      />
 
       <div className="hero-content" style={{ position: 'relative', zIndex: 1, maxWidth: '1000px', width: '100%' }}>
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ display: 'flex', alignItems: 'center', gap: 'clamp(20px, 4vw, 40px)', marginBottom: 'clamp(30px, 6vw, 60px)' }}
+          className="brand-container"
+          style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap',
+            alignItems: 'center', 
+            gap: 'clamp(15px, 4vw, 30px)', 
+            marginBottom: 'clamp(30px, 6vw, 60px)' 
+          }}
         >
-          <img src="/assets/images/logo.png" alt="Bahuchar Logo" style={{ height: 'clamp(80px, 12vw, 140px)', width: 'auto' }} />
-          <div style={{ borderLeft: '3px solid var(--industrial-ochre)', paddingLeft: '30px' }}>
-             <h3 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2.8rem)', margin: 0, color: 'var(--slate-text)', lineHeight: 0.95, fontWeight: 900 }}>BAHUCHAR<br /><span style={{ color: 'var(--industrial-ochre)', fontSize: '0.8em' }}>ENGINEERING</span></h3>
-             <span className="mono" style={{ fontSize: '0.9rem', marginTop: '12px', display: 'block', fontWeight: 700 }}>ESTABLISHED PRECISION</span>
+          <img 
+            src="/assets/images/logo.png" 
+            alt="Bahuchar Logo" 
+            style={{ 
+              height: 'clamp(70px, 12vw, 130px)', 
+              width: 'auto',
+              flexShrink: 0
+            }} 
+          />
+          <div style={{ 
+            borderLeft: 'clamp(2px, 0.5vw, 4px) solid var(--industrial-ochre)', 
+            paddingLeft: 'clamp(15px, 3vw, 25px)',
+            flex: '1 0 200px'
+          }}>
+             <h3 style={{ 
+               fontSize: 'clamp(1.4rem, 4.5vw, 2.6rem)', 
+               margin: 0, 
+               color: 'var(--slate-text)', 
+               lineHeight: 0.95, 
+               fontWeight: 900,
+               letterSpacing: '-0.02em'
+             }}>
+               BAHUCHAR<br />
+               <span style={{ color: 'var(--industrial-ochre)', fontSize: '0.85em' }}>ENGINEERING</span>
+             </h3>
+             <span className="mono" style={{ 
+               fontSize: 'clamp(0.65rem, 1vw, 0.85rem)', 
+               marginTop: '10px', 
+               display: 'block', 
+               fontWeight: 700,
+               opacity: 0.8
+             }}>
+               ESTABLISHED PRECISION
+             </span>
           </div>
         </motion.div>
 

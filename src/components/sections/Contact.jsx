@@ -18,8 +18,8 @@ const Contact = () => {
         maxWidth: '1400px', 
         margin: '0 auto', 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(280px, 40vw, 500px), 1fr))', 
-        gap: 'clamp(40px, 8vw, 80px)' 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(250px, 100%, 500px), 1fr))', 
+        gap: 'clamp(30px, 6vw, 60px)' 
       }}>
         
         <motion.div 

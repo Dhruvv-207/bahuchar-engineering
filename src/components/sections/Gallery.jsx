@@ -5,13 +5,13 @@ const images = [
   { id: 1, src: '/assets/images/indian_workshop_interior.png', size: 'large' },
   { id: 2, src: '/assets/images/indian_engineer_precision.png', size: 'small' },
   { id: 3, src: '/assets/images/welding_precision_bases.png', size: 'medium' },
-  { id: 4, src: '/assets/images/laser_base_positioning.png', size: 'large' },
+  // { id: 4, src: '/assets/images/laser_base_positioning.png', size: 'large' },
   { id: 5, src: '/assets/images/molding_machine_base_cast.png', size: 'small' },
   { id: 6, src: '/assets/images/finished_bases_ready_shipping.png', size: 'medium' },
   { id: 7, src: '/assets/images/machined_steel_closeup.png', size: 'small' },
   { id: 10, src: '/assets/images/cnc_frame_machining.png', size: 'large' },
   { id: 11, src: '/assets/images/oxy_fuel_cutting_sparks.png', size: 'small' },
-  { id: 12, src: '/assets/images/loading_delivery_truck.png', size: 'medium' },
+  // { id: 12, src: '/assets/images/loading_delivery_truck.png', size: 'medium' },
   { id: 15, src: '/assets/images/quality_check_sticker.png', size: 'medium' }
 ];
 

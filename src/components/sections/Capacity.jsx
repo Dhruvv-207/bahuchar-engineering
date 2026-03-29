@@ -41,7 +41,7 @@ const Capacity = () => {
 
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(280px, 100%, 350px), 1fr))', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(250px, 100%, 350px), 1fr))', 
           gap: 'clamp(20px, 4vw, 30px)' 
         }}>
           {/* Infrastructure & General Capacity */}
