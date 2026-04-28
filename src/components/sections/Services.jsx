@@ -4,15 +4,15 @@ import { Target, Layers, Settings, Ruler } from 'lucide-react';
 
 const Card = ({ icon: Icon, title, desc, img }) => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       viewport={{ once: true }}
-      className="base-card frosted-steel" 
-      style={{ 
-        padding: 'clamp(30px, 5vw, 50px) clamp(20px, 4vw, 40px)', 
-        position: 'relative', 
+      className="base-card frosted-steel"
+      style={{
+        padding: 'clamp(30px, 5vw, 50px) clamp(20px, 4vw, 40px)',
+        position: 'relative',
         overflow: 'hidden',
         minHeight: 'clamp(350px, 50vh, 450px)',
         display: 'flex',
@@ -25,36 +25,36 @@ const Card = ({ icon: Icon, title, desc, img }) => {
         <Icon size={40} color="var(--industrial-ochre)" style={{ marginBottom: '24px' }} />
         <h3 style={{ fontSize: '1.75rem', marginBottom: '16px' }}>{title}</h3>
         <p style={{ color: 'var(--iron-grey)', fontSize: '1rem', lineHeight: '1.6', whiteSpace: 'pre-line' }}>{desc}</p>
-        
-        <div style={{ 
-          marginTop: '32px', 
-          display: 'flex', 
-          alignItems: 'center', 
+
+        <div style={{
+          marginTop: '32px',
+          display: 'flex',
+          alignItems: 'center',
           gap: '8px',
           paddingTop: '32px',
           borderTop: '1px solid rgba(0,0,0,0.1)'
         }}>
-          <Ruler size={16} />
-          <span className="mono" style={{ fontSize: '0.75rem' }}>Precision: +/- 0.05 MM</span>
+          {/* <Ruler size={16} /> */}
+          {/* <span className="mono" style={{ fontSize: '0.75rem' }}>Precision: +/- 0.05 MM</span> */}
         </div>
       </div>
-      
+
       {/* Dimension Overlay Decorative */}
-      <div style={{ 
-        position: 'absolute', 
-        top: '20px', 
-        right: '20px', 
-        width: '100px', 
-        height: '1px', 
-        background: 'rgba(163, 126, 44, 0.2)' 
+      <div style={{
+        position: 'absolute',
+        top: '20px',
+        right: '20px',
+        width: '100px',
+        height: '1px',
+        background: 'rgba(163, 126, 44, 0.2)'
       }} />
-      <div style={{ 
-        position: 'absolute', 
-        top: '20px', 
-        right: '20px', 
-        width: '1px', 
-        height: '100px', 
-        background: 'rgba(163, 126, 44, 0.2)' 
+      <div style={{
+        position: 'absolute',
+        top: '20px',
+        right: '20px',
+        width: '1px',
+        height: '100px',
+        background: 'rgba(163, 126, 44, 0.2)'
       }} />
     </motion.div>
   );
@@ -62,21 +62,21 @@ const Card = ({ icon: Icon, title, desc, img }) => {
 
 const Services = () => {
   const cards = [
-    { 
-      icon: Layers, 
-      title: "Fabrication Work", 
+    {
+      icon: Layers,
+      title: "Fabrication Work",
       desc: "We undertake all types of structural and industrial fabrication work as per client requirements, ensuring high structural integrity and durability.",
       img: "/assets/images/indian_workshop_interior.png"
     },
-    { 
-      icon: Target, 
-      title: "Base Frame Manufacturing", 
+    {
+      icon: Target,
+      title: "Base Frame Manufacturing",
       desc: "Specialized in high-precision base frame fabrication for: \n• Laser Machine Foundations \n• Moulding Machine Bases \nBuilt with maximum rigidity for zero-vibration stability.",
       img: "/assets/images/molding_machine_base_cast.png"
     },
-    { 
-      icon: Settings, 
-      title: "Machining (Plano Miller)", 
+    {
+      icon: Settings,
+      title: "Machining (Plano Miller)",
       desc: "High-precision machining for large-scale industrial components ensures proper alignment, perfect flatness, and a professional surface finish.",
       img: "/assets/images/machined_steel_closeup.png"
     }
@@ -85,7 +85,7 @@ const Services = () => {
   return (
     <section className="section-padding" style={{ backgroundColor: 'white' }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -95,10 +95,10 @@ const Services = () => {
           <span className="mono">Our Capability</span>
           <h2 style={{ fontSize: '3rem', marginTop: '16px' }}>SERVICES</h2>
         </motion.div>
-        
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(250px, 100%, 350px), 1fr))', 
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(250px, 100%, 350px), 1fr))',
           gap: 'clamp(15px, 3vw, 30px)',
           perspective: '1000px'
         }}>
